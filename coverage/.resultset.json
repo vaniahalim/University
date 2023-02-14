@@ -1,11 +1,27 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/profh/67-272-S23/University/app/models/assignment.rb": {
+      "/Users/profh/67-272-S23/University/app/models/faculty.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
+          1,
+          null,
+          null,
+          2,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -16,26 +32,35 @@
           null
         ]
       },
+      "/Users/profh/67-272-S23/University/app/models/department.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/profh/67-272-S23/University/app/models/assignment.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/profh/67-272-S23/University/app/models/course.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/profh/67-272-S23/University/app/models/faculty.rb": {
-        "lines": [
           1,
-          1,
-          null
-        ]
-      },
-      "/Users/profh/67-272-S23/University/app/models/department.rb": {
-        "lines": [
           1,
           null
         ]
       }
     },
-    "timestamp": 1676258726
+    "timestamp": 1676393658
   }
 }

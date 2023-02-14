@@ -1,7 +1,6 @@
 require "test_helper"
 
-describe Course do
-  # it "does a thing" do
-  #   value(1+1).must_equal 2
-  # end
+class CourseTest < ActiveSupport::TestCase
+  should have_many(:assignments)
+  should have_many(:faculties).through(:assignments)
 end

@@ -1,7 +1,6 @@
 require "test_helper"
 
-describe Assignment do
-  # it "does a thing" do
-  #   value(1+1).must_equal 2
-  # end
+class AssignmentTest < ActiveSupport::TestCase
+  should belong_to(:course)
+  should belong_to(:faculty)
 end
