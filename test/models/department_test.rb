@@ -2,6 +2,18 @@ require "test_helper"
 
 class DepartmentTest < ActiveSupport::TestCase
   # Matchers
+  should have_many(:faculties)
+  should have_many(:courses).through(:faculties)
+
+  should validate_presence_of(:name)
+  should validate_presence_of(:unit_prefix)
+  should validate_uniqueness_of(:unit_prefix)
+
+  # validation format
+  should allow_value(12).for(:unit_prefix)
+  should allow_value(92).for(:unit_prefix)
+  should_not allow_value(0).for(:unit_prefix)
+  should_not allow_value(922).for(:unit_prefix)
 
 
   # Context

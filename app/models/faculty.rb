@@ -6,10 +6,14 @@ class Faculty < ApplicationRecord
   
     # Scopes
     # 1. `alphabetical` [order]
+    scope :alphabetical, -> { order("first_name, last_name") }
+
     # 2. `active`       [where]
-  
+    scope :active, -> { where(active: true) }
+
     # Validations
     # 1. must have first, last names
-    # 2. rank must be either `Assistant Professor`, `Associate Professor`, or `Professor`
-  
+    validates_presence_of :first_name, :last_name
+    # 2. rank must be either `Assistant Professor`, `Associate Professor`, or `Professor'
+    validates_inclusion_of :rank, in: %w["Assistant Professor", "Associate Professor", "Professor"]
 end
